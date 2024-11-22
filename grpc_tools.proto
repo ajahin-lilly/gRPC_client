@@ -1,0 +1,27 @@
+syntax = "proto3";
+package grpc_tools;
+
+service ExecutorService {
+    rpc ExecuteRequest (ExecuteRequestData) returns (ExecuteResponseData);
+}
+
+message FileData {
+    string filename = 1;
+    bytes content = 2;
+}
+
+message ExecuteRequestData {
+    string code = 1;
+    repeated FileData files = 2;
+}
+
+message HTTPResponseData {
+    string key = 1;
+    string value = 2;
+}
+
+message ExecuteResponseData {
+    bool success = 1;
+    string message = 2;
+    repeated HTTPResponseData response_json = 3;
+}

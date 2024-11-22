@@ -1,0 +1,52 @@
+# Ignore everything under the venv directory
+venv/
+
+# Ignore generated protobuf files
+*_pb2*.py
+
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+*.whl
+*.manifest
+*.spec
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.cache/
+.coverage
+.coverage.*
+*.cover
+*.py,cover
+.hypothesis/
+
+# Editor / IDE-specific ignores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Environment / OS-specific ignores
+.DS_Store
+Thumbs.db
+
+# Git-specific ignores
+*.orig
+*.rej
+*.lock
+*.log
+*.bak
+*.tmp
+*.log/
+*.tags
